@@ -85,3 +85,31 @@ footer {
   padding: 20px 0;
   margin-top: 50px;
 }
+.sell-item-section,
+.contact-section {
+  padding: 4rem 0;
+}
+
+.form-control,
+.btn {
+  border-radius: 8px;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.contact-section .contact-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+.title {
+  color: #132ac0;
+  font-weight: 500;
+}
