@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      p {
+        line-height: 1rem;
+        font-family: sans-serif;
+        color: #676767;
+      }
+      li {
+        color: #676767;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h5 {
+        color: #4e4c4c;
+      }
+    </style>
+    <script defer src="terms.js"></script>
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5 pb-5">
+      <div class="card shadow p-4">
+        <h2 class="text-center">Terms & Conditions</h2>
+        <p>
+          Welcome to Graduate Marketplace, a marketing website that connects
+          buyers with sellers of various products. These Terms and Conditions
+          govern your use of our website and the purchase of products through
+          our platform.
+        </p>
+        <ul>
+          <h5>Payment Terms</h5>
+          <li>
+            Payment Method: We offer Payment on Delivery (POD) as our primary
+            payment method. This means that payment is made in person to our
+            delivery agent upon receipt of the product.
+          </li>
+          <li>
+            Payment Confirmation: Our delivery/Seller agent will confirm receipt
+            of payment and hand over the product to the buyer in Person.
+          </li>
+          <h5>Delivery Terms</h5>
+          <li>Delivery Area: We deliver products within UCC CAMPUS ONLY</li>
+          <li>
+            Delivery Timeframe: We aim to deliver products 24-48 hours from the
+            time of order confirmation.
+          </li>
+          <li>
+            Delivery Failure: If our delivery agent is unable to deliver the
+            product to the buyer due to the buyer's absence or failure to
+            provide accurate delivery information, the buyer will be liable for
+            any additional delivery costs incurred
+          </li>
+          <h5>Product Returns</h5>
+          <li>Delivery Area: We deliver products within UCC CAMPUS ONLY</li>
+          <li>
+            Return Policy: We accept returns within 3-5 days from the date of
+            delivery.
+          </li>
+          <li>
+            Return Conditions: Products must be returned in their original
+            condition, with all tags and packaging intact.
+          </li>
+        </ul>
+        <h5>Changes to Terms and Condition</h5>
+        <p>
+          We reserve the right to modify these Terms and Conditions at any time
+          without prior notice.
+        </p>
+        <p>
+          By using our website and purchasing products through our platform, you
+          agree to be bound by these Terms and Conditions.
+        </p>
+        <h5>Acknowledgement</h5>
+        <p>
+          I acknowledge that I have read, understood, and agree to be bound by
+          these Terms and Conditions.
+        </p>
+
+        <!-- Accept Terms Checkbox -->
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" id="acceptTerms" />
+          <label class="form-check-label" for="acceptTerms">
+            I accept the Terms & Conditions
+          </label>
+        </div>
+
+        <!-- Back to Homepage Button (Disabled by Default) -->
+        <button id="backToHome" class="btn btn-primary w-100 mt-3" disabled>
+          Back to Homepage
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("acceptTerms")
+        .addEventListener("change", function () {
+          document.getElementById("backToHome").disabled = !this.checked;
+        });
+
+      document
+        .getElementById("backToHome")
+        .addEventListener("click", function () {
+          window.location.href = "index.html"; // Redirects to homepage
+        });
+    </script>
+  </body>
+</html>
